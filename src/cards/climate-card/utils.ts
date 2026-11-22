@@ -19,13 +19,13 @@ export const CLIMATE_HVAC_ACTION_COLORS: Record<HvacAction, string> = {
 };
 
 export const CLIMATE_HVAC_MODE_ICONS: Record<HvacMode, string> = {
-  auto: "mdi:thermostat-auto",
+  auto: "mdi:alpha-a",
   cool: "mdi:snowflake",
   dry: "mdi:water-percent",
   fan_only: "mdi:fan",
   heat: "mdi:fire",
   heat_cool: "mdi:sun-snowflake-variant",
-  off: "mdi:power",
+  off: "mdi:air-conditioner",
 };
 
 export const CLIMATE_HVAC_ACTION_ICONS: Record<HvacAction, string> = {
@@ -33,7 +33,7 @@ export const CLIMATE_HVAC_ACTION_ICONS: Record<HvacAction, string> = {
   drying: "mdi:water-percent",
   heating: "mdi:fire",
   idle: "mdi:clock-outline",
-  off: "mdi:power",
+  off: "mdi:air-conditioner",
 };
 
 export function getHvacModeColor(hvacMode: HvacMode): string {
@@ -50,6 +50,8 @@ export function getHvacModeIcon(hvacMode: HvacMode): string {
   return CLIMATE_HVAC_MODE_ICONS[hvacMode] ?? "mdi:thermostat";
 }
 
-export function getHvacActionIcon(hvacAction: HvacAction): string | undefined {
-  return CLIMATE_HVAC_ACTION_ICONS[hvacAction] ?? "";
+export function getHvacActionIcon(
+  hvacAction: HvacAction | undefined
+): string | undefined {
+  return hvacAction ? (CLIMATE_HVAC_ACTION_ICONS[hvacAction] ?? "") : "";
 }

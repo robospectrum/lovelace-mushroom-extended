@@ -1,6 +1,50 @@
 {
   "card": {
-    "not_found": "Сущность не найдена"
+    "not_found": "Сущность не найдена",
+    "climate": {
+      "fan_mode_list": {
+        "auto": "Авто",
+        "low": "1",
+        "medium_low": "2",
+        "medium": "3",
+        "medium_high": "4",
+        "high": "5"
+      },
+      "swing_mode_list": {
+        "off": "Стоп",
+        "vertical": "Верт.",
+        "horizontal": "Гор.",
+        "both": "3D",
+        "default": "Верт. по умолчанию",
+        "full_swing": "Верт. качание",
+        "fixed_upper": "Вверх",
+        "fixed_upper_middle": "Вверх-центр",
+        "fixed_middle": "По центру",
+        "fixed_lower_middle": "Вниз-центр",
+        "fixed_lower": "Вниз",
+        "swing_upper": "Качание вверху",
+        "swing_upper_middle": "Качание вверх-центр",
+        "swing_middle": "Качание в центре",
+        "swing_lower_middle": "Качание вниз-центр",
+        "swing_lower": "Качание внизу"
+      },
+      "swing_horizontal_mode_list": {
+        "default": "Гор. по умолчанию",
+        "full_swing": "Гор. качание",
+        "left": "Влево",
+        "left_center": "Влево-центр",
+        "center": "По центру",
+        "right_center": "Вправо-центр",
+        "right": "Вправо"
+      },
+      "preset_mode_list": {
+        "eco": "Эко",
+        "away": "Ожидание",
+        "boost": "Турбо",
+        "sleep": "Сон",
+        "none": "Без режима"
+      }
+    }
   },
   "editor": {
     "card": {
@@ -9,7 +53,10 @@
       },
       "climate": {
         "hvac_modes": "Режимы работы",
-        "show_temperature_control": "Управлять целевой температурой?"
+        "show_temperature_control": "Управлять целевой температурой?",
+        "fun_speed_controls": "Управление скоростью вентилятора",
+        "fun_direction_control": "Управление положением заслонки",
+        "special_modes_control": "Управление специальными режимами"
       },
       "cover": {
         "show_buttons_control": "Добавить кнопки управления?",
